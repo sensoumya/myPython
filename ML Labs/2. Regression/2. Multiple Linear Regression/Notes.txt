@@ -1,0 +1,28 @@
+Assumptions of a Linear Regression:
+1. Linearity
+2. Homoscedasticity
+3. Multivariate normality
+4. Independence of errors
+5. Lack of multicollinearity
+
+
+5 methods of building models:
+1. All in
+2. Backward elemination
+3. Forward selection
+4. Bidirectional elimination
+5. Score comparison
+
+Stepwise regression actually refers to
+2. Backward elemination
+3. Forward selection
+4. Bidirectional elimination
+
+but sometime only Bidirectional elimination is also meant
+
+1. All in:
+		- Prior knowledge that all the variables are true predictors
+		- Incase all the variables have to be used (as per instructions)
+		- Preparing for backward elimination
+
+2. Backward Elimination
