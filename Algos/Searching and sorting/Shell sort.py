@@ -1,15 +1,21 @@
 import random
 
 
-def sh_sort(arr):
+def shellSort(arr):
     n = len(arr)
     gap = n // 2
     while gap > 0:
-        for start in range(gap):
-            for i in range()
-        gap = gap // 2
+        for i in range(gap, n):
+            temp = arr[i]
+            j = i
+            while j >= gap and arr[j - gap] > temp:
+                arr[j] = arr[j - gap]
+                j -= ga
+            arr[j] = temp
+        gap //= 2
+    return arr
 
 
 arr = random.sample(range(1, 100), 20)
 print(arr)
-print(sh_sort(arr))
+print(shellSort(arr))
