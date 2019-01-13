@@ -1,4 +1,4 @@
-class vertex:
+class Vertex:
     def __init__(self, key):
         self.id = key
         self.connTo = {}
@@ -19,7 +19,7 @@ class vertex:
         return f'{self.id} is connected to {[x.id for x in self.connTo]}'
 
 
-class graph:
+class Graph:
     def __init__(self):
         self.vertlist = {}
         self.vertCount = 0
@@ -52,7 +52,7 @@ class graph:
         return n in self.vertlist
 
 
-# g = graph()
+# g = Graph()
 # for i in range(6):
 #     g.addVertex(i)
 # g.vertlist
