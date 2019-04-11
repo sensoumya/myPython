@@ -35,6 +35,12 @@ class emp:
 emp_1 = emp('Corey', 'Schafer', 50000)
 emp_2 = emp('Test', 'Employee', 60000)
 
+# emp_1.set_raise_method(20)
+# print(emp_1.raise_amount)
+
+# emp_1.company = 'Accenture'
+# print(emp_1.company)
+
 # emp.set_raise_method(1.05)
 
 # emp_1.set_raise_method(1.05) '''setting the class method from a variable will result the same'''
@@ -60,3 +66,5 @@ emp_2 = emp('Test', 'Employee', 60000)
 # for using static method
 import datetime
 print(emp.is_workday(datetime.date(2018, 6, 4)))
+
+# emp.fullname(emp_1)
