@@ -7,14 +7,6 @@ import requests
 data = json.load(src.text)
 
 with open('finance.json', 'w') as wf:
-    json.dump(data, wf, indent=2)
+    data = json.load(data, wf, indent=2)
 
-rates = {}
-for x in data['list']['resources']:
-    try:
-        if '/' in x['resource']['fields']['name']:
-            name = x['resource']['fields']['name']
-            price = x['resource']['fields']['price']
-    except:
-        pass
-    rates[name] = price
+print(data)

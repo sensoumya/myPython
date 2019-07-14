@@ -16,9 +16,10 @@ class emp:
 
 
 emp_1 = emp('Corey', 'Schafer', 50000)
-emp_2 = emp('Test', 'Employee', 60000)
+# emp_2 = emp('Test', 'Employee', 60000)
 
-print(emp_1.pay)
-emp_1.apply_raise()
-print(emp_1.pay)
-print(emp.no_of_emp)
+# print(emp_1.pay)
+# emp_1.apply_raise()
+# print(emp_1.pay)
+# print(emp.no_of_emp)
+print(emp_1.raise_amount)

@@ -1,3 +1,4 @@
 *.ipynb_checkpoints
 
 \ML Labs\6. Deep Learning\2. Convolution Neural Network\dataset
+*.idea
