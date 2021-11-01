@@ -1,3 +1,16 @@
+#Eratosthenes method
+def f(n):
+    if n<2:
+        return 0
+    isPrime = [0,0]+[1]*(n-2)
+    for i in range(2, math.ceil(math.sqrt(n))):
+        if isPrime[i]:
+            for j in range(i*i, n, i):
+                isPrime[j] = 0
+    return sum(isPrime)
+
+
+
 # nth prime number
 def nth_prime_no(n):
     if n == 1:
