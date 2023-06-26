@@ -35,3 +35,11 @@ def sqrt(num):
 
 
 print(sqrt(200234))
+
+
+def sqRoot(n):
+    r = n
+    precision = 10**(-10)
+    while abs(n-r*r) > precision:
+        r = (r+n/r)/2
+    return r
