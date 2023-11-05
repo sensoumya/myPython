@@ -1,3 +1,17 @@
+#Sieve of Eratosthenes algorithm
+def f(n):
+    primes = []
+    sieve = [1] * (n+1)
+
+    for num in range(2, int(n**0.5)+1):
+        if sieve[num]:
+            for mul in range(num**2, n+1, num):
+                sieve[mul] = 0
+    for num in range(2, n+1):
+        primes.append(num) if sieve[num] else ''
+    return primes
+
+
 #Eratosthenes method
 def f(n):
     if n<2:
